@@ -48,7 +48,7 @@ export const MovieDetailsPage = () => {
           <img src={film.image} alt={film.id} width="300" />
           <div className={styles.info}>
             <h2 className={styles.title}>
-              {film.title} ({film.year})
+              {film.title} {!isNaN(film.year) && <span>({film.year})</span>}
             </h2>
             <span>Use Score: {film.score}%</span>
             <h4>Overview</h4>
