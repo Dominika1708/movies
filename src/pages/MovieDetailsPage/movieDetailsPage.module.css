@@ -1,0 +1,52 @@
+.section {
+  padding-left: 30px;
+  border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.button {
+  margin: 20px 0 20px;
+  padding: 1px 10px 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: #252525;
+  background-color: #fff;
+  color: #252525;
+  align-items: baseline;
+  display: flex;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #252525;
+  color: #fff;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+.wrap {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: rgb(212, 63, 172);
+}
+
+.item:not(:last-child) {
+  padding-bottom: 10px;
+}

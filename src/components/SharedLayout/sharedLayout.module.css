@@ -1,0 +1,14 @@
+.container {
+  padding: 30px;
+  border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.link {
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.link:first-of-type {
+  margin-right: 20px;
+}
