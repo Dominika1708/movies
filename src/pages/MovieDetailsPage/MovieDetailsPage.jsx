@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import {
   useParams,
   Outlet,
@@ -72,7 +72,11 @@ export const MovieDetailsPage = () => {
           </li>
         </ul>
       </section>
-      <Outlet />
+      <Suspense fallback={<div>Loading page...</div>}>
+        <Outlet />
+      </Suspense>
     </div>
   );
 };
+
+export default MovieDetailsPage;

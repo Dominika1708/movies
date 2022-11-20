@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 import styles from './moviesList.module.css'
 
@@ -15,4 +16,9 @@ export const MoviesList = ({ films, prevPage }) => {
       ))}
     </ul>
   );
+};
+
+MoviesList.propTypes = {
+  films: PropTypes.array.isRequired,
+  prevPage: PropTypes.string.isRequired,
 };

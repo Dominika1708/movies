@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { MoviesList } from 'components/MoviesList/MoviesList';
 import { getMovies } from 'utils/api/getMovies';
 
-import styles from './moviesPage.module.css'
+import styles from './moviesPage.module.css';
 
 export const MoviesPage = () => {
   const [films, setFilms] = useState([]);
@@ -25,10 +25,19 @@ export const MoviesPage = () => {
   return (
     <div className={styles.container}>
       <form onSubmit={searchMovies} className={styles.form}>
-        <input type="text" name="movie" placeholder='search movie' className={styles.input} />
-        <button type="submit" className={styles.button}>Search</button>
+        <input
+          type="text"
+          name="movie"
+          placeholder="search movie"
+          className={styles.input}
+        />
+        <button type="submit" className={styles.button}>
+          Search
+        </button>
       </form>
-      {films && <MoviesList films={films} prevPage=""/>}
+      {films && <MoviesList films={films} prevPage="" />}
     </div>
   );
 };
+
+export default MoviesPage;
